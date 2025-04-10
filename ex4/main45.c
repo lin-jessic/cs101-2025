@@ -5,7 +5,7 @@ void tower0fHanoi(int n, char from_rod, char to_rod, char aux_rod) {
         return;
     }
     tower0fHanoi(n-1, from_rod, aux_rod, to_rod);
-    printf("\n Move disk %d from rod %c", n, from_rod, to_rod);
+    printf("\n Move disk %d from rod %c to rod %c", n, from_rod, to_rod);
     tower0fHanoi(n-1, aux_rod, to_rod, from_rod);
 }
 
