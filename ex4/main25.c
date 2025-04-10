@@ -8,11 +8,14 @@ int multi(int i, int j) {
         printf("%d*%d=%d\t", i, j, i*j);
     }
 }
-
-int main() {
-    for (int i = 1; i <= 9; i++) {
+void table (int i) {
+    if (i > 9) return;
+    else{ 
         multi(i, 9);
-        printf("\n");
+        table(i + 1);
     }
+}
+int main() {
+    table(1);
     return 0;
 }
