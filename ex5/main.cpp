@@ -23,7 +23,7 @@ class Car {
 
 class BMW_Car : public Car {
     public:
-    BMW_Car() : Car("BMW", "No-wheel"){}
+    BMW_Car() : Car("BMW", "Rear-wheel"){}
     
 };
 class AUDI_Car : public Car {
